@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<bindings xmlns="http://java.sun.com/xml/ns/jaxb" if-exists="true" version="2.1">
+  <!--
+
+Este arquivo foi gerado pela Arquitetura JavaTM para Implementação de Referência (JAXB) de Bind XML, v2.3.0 
+Consulte <a href="https://javaee.github.io/jaxb-v2/">https://javaee.github.io/jaxb-v2/</a> 
+Todas as modificações neste arquivo serão perdidas após a recompilação do esquema de origem. 
+Gerado em: 2022.07.03 às 08:22:19 PM BRT 
+
+  -->
+  <bindings xmlns:tns="http://www.lopes.com/springsoap/gen" if-exists="true" scd="x-schema::tns">
+    <schemaBindings map="false">
+      <package name="com.lopes.springsoap.client.gen"/>
+    </schemaBindings>
+    <bindings if-exists="true" scd="tns:getCustomerRequest">
+      <class ref="com.lopes.springsoap.client.gen.GetCustomerRequest"/>
+    </bindings>
+    <bindings if-exists="true" scd="tns:getCustomerResponse">
+      <class ref="com.lopes.springsoap.client.gen.GetCustomerResponse"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:customer">
+      <class ref="com.lopes.springsoap.client.gen.Customer"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:currency">
+      <typesafeEnumClass ref="com.lopes.springsoap.client.gen.Currency"/>
+    </bindings>
+  </bindings>
+</bindings>
