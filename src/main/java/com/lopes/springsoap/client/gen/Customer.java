@@ -4,7 +4,6 @@ package com.lopes.springsoap.client.gen;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
-import javax.xml.bind.annotation.XmlSchemaType;
 import javax.xml.bind.annotation.XmlType;
 
 
@@ -19,9 +18,8 @@ import javax.xml.bind.annotation.XmlType;
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
  *       &lt;sequence&gt;
  *         &lt;element name="name" type="{http://www.w3.org/2001/XMLSchema}string"/&gt;
- *         &lt;element name="population" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
- *         &lt;element name="capital" type="{http://www.w3.org/2001/XMLSchema}string"/&gt;
- *         &lt;element name="currency" type="{http://www.lopes.com/springsoap/gen}currency"/&gt;
+ *         &lt;element name="email" type="{http://www.w3.org/2001/XMLSchema}string"/&gt;
+ *         &lt;element name="telephone" type="{http://www.w3.org/2001/XMLSchema}string"/&gt;
  *       &lt;/sequence&gt;
  *     &lt;/restriction&gt;
  *   &lt;/complexContent&gt;
@@ -33,20 +31,17 @@ import javax.xml.bind.annotation.XmlType;
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "customer", propOrder = {
     "name",
-    "population",
-    "capital",
-    "currency"
+    "email",
+    "telephone"
 })
 public class Customer {
 
     @XmlElement(required = true)
     protected String name;
-    protected int population;
     @XmlElement(required = true)
-    protected String capital;
+    protected String email;
     @XmlElement(required = true)
-    @XmlSchemaType(name = "string")
-    protected Currency currency;
+    protected String telephone;
 
     /**
      * Obtém o valor da propriedade name.
@@ -73,67 +68,51 @@ public class Customer {
     }
 
     /**
-     * Obtém o valor da propriedade population.
-     * 
-     */
-    public int getPopulation() {
-        return population;
-    }
-
-    /**
-     * Define o valor da propriedade population.
-     * 
-     */
-    public void setPopulation(int value) {
-        this.population = value;
-    }
-
-    /**
-     * Obtém o valor da propriedade capital.
+     * Obtém o valor da propriedade email.
      * 
      * @return
      *     possible object is
      *     {@link String }
      *     
      */
-    public String getCapital() {
-        return capital;
+    public String getEmail() {
+        return email;
     }
 
     /**
-     * Define o valor da propriedade capital.
+     * Define o valor da propriedade email.
      * 
      * @param value
      *     allowed object is
      *     {@link String }
      *     
      */
-    public void setCapital(String value) {
-        this.capital = value;
+    public void setEmail(String value) {
+        this.email = value;
     }
 
     /**
-     * Obtém o valor da propriedade currency.
+     * Obtém o valor da propriedade telephone.
      * 
      * @return
      *     possible object is
-     *     {@link Currency }
+     *     {@link String }
      *     
      */
-    public Currency getCurrency() {
-        return currency;
+    public String getTelephone() {
+        return telephone;
     }
 
     /**
-     * Define o valor da propriedade currency.
+     * Define o valor da propriedade telephone.
      * 
      * @param value
      *     allowed object is
-     *     {@link Currency }
+     *     {@link String }
      *     
      */
-    public void setCurrency(Currency value) {
-        this.currency = value;
+    public void setTelephone(String value) {
+        this.telephone = value;
     }
 
 }

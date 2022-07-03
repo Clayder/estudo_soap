@@ -1,7 +1,8 @@
-package com.lopes.springsoap;
+package com.lopes.springsoap.controller;
 
 import com.lopes.springsoap.gen.GetCustomerRequest;
 import com.lopes.springsoap.gen.GetCustomerResponse;
+import com.lopes.springsoap.repository.CustomerRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.ws.server.endpoint.annotation.Endpoint;
 import org.springframework.ws.server.endpoint.annotation.PayloadRoot;
@@ -25,7 +26,7 @@ public class CustomerEndpoint {
     public GetCustomerResponse getCustomer(@RequestPayload GetCustomerRequest request) {
         System.out.println("@@@@@@@@@");
         GetCustomerResponse response = new GetCustomerResponse();
-        response.setCustomer(customerRepository.findCustomer(request.getName()));
+        response.setCustomer(customerRepository.findCustomer(request.getEmail()));
 
         return response;
     }

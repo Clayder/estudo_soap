@@ -13,7 +13,7 @@ public class CustomerClient extends WebServiceGatewaySupport {
     public GetCustomerResponse getCustomer(String customer) {
 
         GetCustomerRequest request = new GetCustomerRequest();
-        request.setName(customer);
+        request.setEmail(customer);
 
         logger.info("Requesting information for " + customer);
 

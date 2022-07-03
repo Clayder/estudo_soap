@@ -5,7 +5,7 @@
 Este arquivo foi gerado pela Arquitetura JavaTM para Implementação de Referência (JAXB) de Bind XML, v2.3.0 
 Consulte <a href="https://javaee.github.io/jaxb-v2/">https://javaee.github.io/jaxb-v2/</a> 
 Todas as modificações neste arquivo serão perdidas após a recompilação do esquema de origem. 
-Gerado em: 2022.07.03 às 08:22:19 PM BRT 
+Gerado em: 2022.07.03 às 08:48:24 PM BRT 
 
   -->
   <bindings xmlns:tns="http://www.lopes.com/springsoap/gen" if-exists="true" scd="x-schema::tns">
@@ -20,9 +20,6 @@ Gerado em: 2022.07.03 às 08:22:19 PM BRT
     </bindings>
     <bindings if-exists="true" scd="~tns:customer">
       <class ref="com.lopes.springsoap.client.gen.Customer"/>
-    </bindings>
-    <bindings if-exists="true" scd="~tns:currency">
-      <typesafeEnumClass ref="com.lopes.springsoap.client.gen.Currency"/>
     </bindings>
   </bindings>
 </bindings>
