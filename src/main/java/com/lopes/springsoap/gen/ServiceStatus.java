@@ -15,18 +15,17 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Classe Java de customer complex type.
+ * <p>Classe Java de serviceStatus complex type.
  * 
  * <p>O seguinte fragmento do esquema especifica o conteúdo esperado contido dentro desta classe.
  * 
  * <pre>
- * &lt;complexType name="customer">
+ * &lt;complexType name="serviceStatus">
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
- *         &lt;element name="name" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="email" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="telephone" type="{http://www.w3.org/2001/XMLSchema}string"/>
+ *         &lt;element name="statusCode" type="{http://www.w3.org/2001/XMLSchema}string"/>
+ *         &lt;element name="message" type="{http://www.w3.org/2001/XMLSchema}string"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>
@@ -36,90 +35,63 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "customer", propOrder = {
-    "name",
-    "email",
-    "telephone"
+@XmlType(name = "serviceStatus", propOrder = {
+    "statusCode",
+    "message"
 })
-public class Customer {
+public class ServiceStatus {
 
     @XmlElement(required = true)
-    protected String name;
+    protected String statusCode;
     @XmlElement(required = true)
-    protected String email;
-    @XmlElement(required = true)
-    protected String telephone;
+    protected String message;
 
     /**
-     * Obtém o valor da propriedade name.
+     * Obtém o valor da propriedade statusCode.
      * 
      * @return
      *     possible object is
      *     {@link String }
      *     
      */
-    public String getName() {
-        return name;
+    public String getStatusCode() {
+        return statusCode;
     }
 
     /**
-     * Define o valor da propriedade name.
+     * Define o valor da propriedade statusCode.
      * 
      * @param value
      *     allowed object is
      *     {@link String }
      *     
      */
-    public void setName(String value) {
-        this.name = value;
+    public void setStatusCode(String value) {
+        this.statusCode = value;
     }
 
     /**
-     * Obtém o valor da propriedade email.
+     * Obtém o valor da propriedade message.
      * 
      * @return
      *     possible object is
      *     {@link String }
      *     
      */
-    public String getEmail() {
-        return email;
+    public String getMessage() {
+        return message;
     }
 
     /**
-     * Define o valor da propriedade email.
+     * Define o valor da propriedade message.
      * 
      * @param value
      *     allowed object is
      *     {@link String }
      *     
      */
-    public void setEmail(String value) {
-        this.email = value;
-    }
-
-    /**
-     * Obtém o valor da propriedade telephone.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getTelephone() {
-        return telephone;
-    }
-
-    /**
-     * Define o valor da propriedade telephone.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setTelephone(String value) {
-        this.telephone = value;
+    public void setMessage(String value) {
+        this.message = value;
     }
 
 }

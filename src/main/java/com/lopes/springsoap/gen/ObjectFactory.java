@@ -2,7 +2,7 @@
 // Este arquivo foi gerado pela Arquitetura JavaTM para Implementação de Referência (JAXB) de Bind XML, v2.2.7 
 // Consulte <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 // Todas as modificações neste arquivo serão perdidas após a recompilação do esquema de origem. 
-// Gerado em: 2022.07.03 às 08:48:23 PM BRT 
+// Gerado em: 2022.07.05 às 10:13:52 PM BRT 
 //
 
 
@@ -37,6 +37,14 @@ public class ObjectFactory {
     }
 
     /**
+     * Create an instance of {@link RemoveCustomerRequest }
+     * 
+     */
+    public RemoveCustomerRequest createRemoveCustomerRequest() {
+        return new RemoveCustomerRequest();
+    }
+
+    /**
      * Create an instance of {@link GetCustomerResponse }
      * 
      */
@@ -53,11 +61,43 @@ public class ObjectFactory {
     }
 
     /**
+     * Create an instance of {@link RemoveCustomerResponse }
+     * 
+     */
+    public RemoveCustomerResponse createRemoveCustomerResponse() {
+        return new RemoveCustomerResponse();
+    }
+
+    /**
+     * Create an instance of {@link ServiceStatus }
+     * 
+     */
+    public ServiceStatus createServiceStatus() {
+        return new ServiceStatus();
+    }
+
+    /**
      * Create an instance of {@link GetCustomerRequest }
      * 
      */
     public GetCustomerRequest createGetCustomerRequest() {
         return new GetCustomerRequest();
+    }
+
+    /**
+     * Create an instance of {@link AddCustomerResponse }
+     * 
+     */
+    public AddCustomerResponse createAddCustomerResponse() {
+        return new AddCustomerResponse();
+    }
+
+    /**
+     * Create an instance of {@link AddCustomerRequest }
+     * 
+     */
+    public AddCustomerRequest createAddCustomerRequest() {
+        return new AddCustomerRequest();
     }
 
 }

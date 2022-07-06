@@ -1,6 +1,7 @@
 package com.lopes.springsoap.repository;
 
 import com.lopes.springsoap.gen.Customer;
+
 import org.springframework.stereotype.Component;
 
 import javax.annotation.PostConstruct;
@@ -41,7 +42,11 @@ public class CustomerRepository {
     }
 
     public Customer saveCustomer(Customer customer) {
-        customers.put(customer.getName(), customer);
+        customers.put(customer.getEmail(), customer);
         return customers.get(customer.getEmail());
+    }
+
+    public void removerCustomer(String email) {
+        customers.remove(email, customers.get(email));
     }
 }

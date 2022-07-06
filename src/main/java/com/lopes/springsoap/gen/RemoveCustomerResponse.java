@@ -25,7 +25,7 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
- *         &lt;element name="email" type="{http://www.w3.org/2001/XMLSchema}string"/>
+ *         &lt;element name="serviceStatus" type="{http://www.lopes.com/springsoap/gen}serviceStatus"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>
@@ -36,36 +36,36 @@ import javax.xml.bind.annotation.XmlType;
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "", propOrder = {
-    "email"
+    "serviceStatus"
 })
-@XmlRootElement(name = "getCustomerRequest")
-public class GetCustomerRequest {
+@XmlRootElement(name = "removeCustomerResponse")
+public class RemoveCustomerResponse {
 
     @XmlElement(required = true)
-    protected String email;
+    protected ServiceStatus serviceStatus;
 
     /**
-     * Obtém o valor da propriedade email.
+     * Obtém o valor da propriedade serviceStatus.
      * 
      * @return
      *     possible object is
-     *     {@link String }
+     *     {@link ServiceStatus }
      *     
      */
-    public String getEmail() {
-        return email;
+    public ServiceStatus getServiceStatus() {
+        return serviceStatus;
     }
 
     /**
-     * Define o valor da propriedade email.
+     * Define o valor da propriedade serviceStatus.
      * 
      * @param value
      *     allowed object is
-     *     {@link String }
+     *     {@link ServiceStatus }
      *     
      */
-    public void setEmail(String value) {
-        this.email = value;
+    public void setServiceStatus(ServiceStatus value) {
+        this.serviceStatus = value;
     }
 
 }
